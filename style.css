@@ -1,0 +1,140 @@
+*{
+    margin: 10px 0 10px 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.headeruno{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    image-resolution: 100px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    display: flex;
+    text-underline-position: initial;
+}
+
+.caja{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    background-color: #fff;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+nav{
+    background-color: #eee9e9;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgb(0,0,0)
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-grid;
+    padding: 15px 35px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #292828;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+}
+nav ul li::after {
+    content: '';
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;;
+    opacity: 0;
+}
+nav ul li:hover{
+    color: #fff;
+}
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+
+img{
+    width: 150px;
+}
+
+h2{
+    font-size: 50px;
+    color: darkslategray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: row;
+}
+p{
+    font-size: 16px;
+    color: black;
+    font-weight: 80;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: condensed;
+}
+
+
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}    
+.caja img{
+    border-radius: 150%;
+    justify-content: center;
+}
+
+#Programas img{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    border-radius: 150%;
+    justify-content: center;
+    padding: 10px;
+    image-resolution: 100px;
+}
+
+
+.body img{
+    border-radius: 50%;
+}
+
+footer{
+    font-size: xx-small;
+    width: 100%;
+    font-family: serif;
+}
+
